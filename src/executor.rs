@@ -8,7 +8,7 @@ pub fn execute(cmd: Command) {
         "cd" => change_directory(cmd.args),
         "pwd" => print_working_directory(),
         "exit" => {
-            println!("\nBye!");
+            println!("Bye!");
             process::exit(0);
         },
         _ => run_external_terminal(cmd),
