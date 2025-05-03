@@ -13,21 +13,28 @@ cargo run
 
 ---
 
-## 📦 First Step
+## 📦 Features
 
-- **Built-in Command Handling**
-  - `cd <dir>`: Change directory
-  - `pwd`: Print current working directory
-  - `exit`: Exit the shell
-- **Execute External Commands**
-  - Run system commands like `ls`, `date`, etc.
-- **Input Parsing**
-  - Split input by whitespace to construct an argument array (`Vec<String>`)
+- ✅ **Completed Features**
+  - **Built-in Command Handling**
+    - `cd <dir>`: Change directory
+    - `pwd`: Print current working directory
+    - `exit`: Exit the shell
+  - **Execute External Commands**
+    - Run system commands like `ls`, `date`, etc.
+  - **Input Parsing**
+    - Split input by whitespace to construct an argument array (`Vec<String>`)
+
+- 🔧 **Planned / In Development**
+  - **Support for pipes (`|`)**
+  - **I/O redirection (`>`, `<`)**
+  - **Background execution (`&`)**
+  - **Command history storage**
+  - **Support for `.myshellrc` configuration file**
 
 ---
 
 ## 📁 Project Structure
-
 ```bash
 rusty_shell/
 ├── src/
@@ -40,19 +47,8 @@ rusty_shell/
 
 ---
 
-## 🔜 Planned Features
-
-- Support for pipes (`|`)
-- Input/output redirection (`>`, `<`)
-- Background execution (`&`)
-- Command history storage
-- Support for `.rustyrc` configuration file
-- Refactor project structure (modularization, error handling improvement)
-
----
 
 ## 🦠 Rust Technologies Used
-
 - Rust Standard Library
   - `std::env` (handling `cd`, `pwd`)
   - `std::process::Command` (executing external commands)
